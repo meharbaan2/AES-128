@@ -13,10 +13,8 @@ void print_metadata() {
     printf("    0000 0000 0000 0000 0000 0000 0000 abf2 (plaintext)\n");
     printf("    1a0c 24f2 8754 95bc b708 0e43 920f 56a2 (key)\n\n");
     printf("Language: C (Legacy MSVC)\n");
-    printf("Compiler: MSVC 19.42.34435 (VS 2022) - x64 Debug build\n");
-    printf("Platform: Windows 11 64-bit (x64)\n");
-    printf("IDE: Visual Studio 2022\n");
-    printf("The program is written in C for Windows 11 operating system\n\n");
+    printf("Compiler: MSVC 19.42.34435 (VS 2022)\n");
+    printf("The program was written in C for Windows 11 operating system\n\n");
 }
 
 // Original S-Box (16x16)
