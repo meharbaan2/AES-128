@@ -373,8 +373,9 @@ int main() {
 
     // Key expansion
     uint8_t round_keys[176];  // 11 round keys (16 bytes each)
+    uint8_t modi_round_keys[176];  // 11 round keys (16 bytes each)
     key_expansion(key, round_keys);
-    modified_key_expansion(key, round_keys);
+    modified_key_expansion(key, modi_round_keys);
 
     // Encrypt with original AES
     uint8_t state_orig[4][4];
@@ -391,7 +392,7 @@ int main() {
     printf("-----------------------------------------------------------\n");
     printf("Output Rounds with modified AES:\n");
     printf("-----------------------------------------------------------\n");
-    aes_encrypt(state_mod, round_keys, modified_s_box, "Modified AES");
+    aes_encrypt(state_mod, modi_round_keys, modified_s_box, "Modified AES");
     printf("-----------------------------------------------------------\n");
 
     return 0;
